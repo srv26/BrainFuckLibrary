@@ -99,7 +99,7 @@ func RunLoop(mytype *mydata) error {
 	return nil
 }
 
-// 1) 8 bit cell size is chosen
+// 1) 8 bit cell size is chosen. Programs that use extra range are likely to be slow, since storing the value {\displaystyle n}n into a cell requires {\displaystyle O(n)}O(n) time as a cell's value may only be changed by incrementing and decrementing.
 // 2) Run executes a given command and perform the required action.
 // 3) for each non matching '[' or ']' error is sent
 // 4) error is updated for each command execution
